@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário elaborado</title>
+</head>
+
+<body>
+    <h1>Formulário</h1>
+    <form method="post" action="sucesso.html">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome" />
+            <br>
+            <br>
+            <label for="endereco">Endereço: </label>
+            <input type="text" name="endereco" id="endereco" />
+            <br>
+            <br>
+            <label for="cidade">Cidade: </label>
+            <input type="text" name="cidade" id="cidade" />
+            <br>
+            <br>
+            Estado:
+            <select name="Estado">
+                <option value="">--Selecione--</option>
+                <option value="rs">Rio Grande do Sul</option>
+                <option value="sp">São Paulo</option>
+                <option value="rj">Rio de Janeiro</option>
+            </select>
+            <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Dados profissionais</legend>
+            Natureza do Cargo:
+            <input type="radio" name="cargo" value="gerencia" />Gerência
+            <input type="radio" name="cargo" value="financeiro" />Financeiro
+            <input type="radio" name="cargo" value="recepção" />Recepção
+            <input type="radio" name="cargo" value="administrativo" />Administrativo
+            <input type="radio" name="cargo" value="juridico" />Jurídico
+            <br>
+            <br>
+            Área de interesses:
+            <input type="checkbox" name="computacao" />Computação
+            <input type="checkbox" name="biologia" />Biologia
+            <input type="checkbox" name="meioambiente" />Meio Ambiente
+            <input type="checkbox" name="engenharia" />Engenharia
+            <input type="checkbox" name="historia" />História
+            <br>
+            <br>
+            Mini-curriculo:
+        <textarea cols="50" rows="5" name="sobre"></textarea>
+        </fieldset>
+        <br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+</body>
+
+</html>

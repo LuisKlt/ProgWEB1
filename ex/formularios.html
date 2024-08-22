@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <h2>Cadastre-se</h2>
+    <form method="post" action="sucesso.html">
+        <fieldset>
+            <legend>Informações de login</legend>
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome" />
+            <br>
+            E-mail: <input type="email" name="email" />
+            <br>
+            Senha: <input type="password" name="senha" />
+        </fieldset>
+        <br>
+        Endereço: <input type="text" name="endereco" />
+        <br>
+        Nascimento: <input type="date" name="nascimento" />
+        <br>
+        Genero:
+        <input type="radio" name="genero" value="m" />M
+        <input type="radio" name="genero" value="f" />F
+        <input type="radio" name="genero" value="o" />Outro
+        <br>
+        Interesses:
+        <input type="checkbox" name="series" />Séries
+        <input type="checkbox" name="filmes" />Filmes
+        <input type="checkbox" name="livros" />Livros
+        <br>
+        Imagem:
+        <input type="file" name="imagem" />
+        <br>
+        Cidade:
+        <select name="cidade" multiple="multiple">
+            <option value="">--Selecione--</option>
+            <option value="rivera">Rivera</option>
+            <option value="liv">Santana do Livramento</option>
+            <option value="minas">Minas do Corrales</option>
+            <option value="bage">Bagé</option>
+        </select>
+        <br>
+        Sobre mim:
+        <textarea cols="10" rows="5" name="sobre"></textarea>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>
