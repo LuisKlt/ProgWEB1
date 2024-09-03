@@ -1,0 +1,38 @@
+div{
+    border: 1px solid;
+    height: 200px;
+}
+.container{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+.um{
+    background-color: greenyellow;
+}
+.dois{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.a{
+    background-color: darkgoldenrod;
+}
+.b{
+    background-color: purple;
+}
+.c{
+    background-color:deeppink;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.tres{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);    
+}
+.d{
+    background-color: blue;
+}
+.e{
+    background-color: red;
+    grid-column-start: 2;
+    grid-column-end: 5;
+}

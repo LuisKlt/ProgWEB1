@@ -1,0 +1,57 @@
+div{
+    border: 1px solid;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 10px;
+}
+.um{
+    background-color: red;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.dois{
+    background-color: blue;
+}
+.tres{
+    background-color:deeppink;
+}
+.quatro{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: red;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    column-gap: 2px;
+}
+.cinco{
+    background-color: red;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.seis{
+    background-color: blue;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+.sete{
+    background-color: red;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.oito{
+    background-color: greenyellow;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+div1{
+    border: 1px solid;
+    height: 98px;
+    background-color: darkred;
+}

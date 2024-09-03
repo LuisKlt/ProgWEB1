@@ -1,0 +1,39 @@
+div{
+    border: 1px solid;
+    height: 100px;
+}
+.container{
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 8px;
+}
+.um{
+    background-color: greenyellow;
+}
+.seis{
+    background-color: greenyellow;
+}
+.dois{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.tres{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.quatro{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.cinco{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.a{
+    background-color: red;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.b{
+    background-color: blue;
+}
