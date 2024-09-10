@@ -1,0 +1,32 @@
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+p {
+    font-family: "Lucida Console";
+    font-size: 20px;
+    width: 40%;
+    margin: 20px auto;
+
+}
+.cartaz {
+    height: 400px;
+    border-radius: 5%;
+    border: 1px solid white;
+}
+div img {
+    width: 300px;
+}
+.um {
+    border: 1px solid white;
+    background-image: linear-gradient(to right, orange, yellow);
+}
+.dois {
+    border: 1px solid white;
+    background-image: linear-gradient(to right, lightblue, blue);
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
