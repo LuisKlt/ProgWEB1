@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+}
+body{
+    color: white;
+    background-color: black;
+    font-family: Courier;
+    text-transform: uppercase;
+    text-align: center;
+}
+.menu{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px, solid, black;
+    border-bottom-color: white;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);  
+}
+.banner{
+    width: 100%;
+}
+.lancamentos{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-image: linear-gradient(to bottom, black, #202020);
+    padding-bottom: 4%;
+}
+.lancamentos img{
+    width: 60%;
+}
+p{
+    color: gray
+}
+h2{
+    background-color: #202020;
+}
+.news{
+    background-color: #202020;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.news div{
+    padding: 10px;
+}
+.news img{
+    width: 80%;
+}
+.news p{
+    text-align: left;
+    padding-top: 4%;
+    color: white;
+    font-weight: bold;
+}
+h4{
+    background-color: #202020;
+    font-weight: bold;
+    padding: 20px;
+}
