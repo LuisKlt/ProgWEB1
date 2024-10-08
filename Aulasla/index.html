@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        p{
+            text-align: center;
+            background-color: rgba(0,0,200,0.3);
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br>
+    <button id="botao1">Botão 1</button>
+    Numero 1<input type="text" id="num1">
+    Numero 2<input type="text" id="num2">
+    <button id="botao2">Botão 2</button>
+    
+    <p id="para">Video do: Luis</p>
+    <script>
+        
+        document.querySelector("#para").style.display = "none";
+
+        document.querySelector("#botao1").onclick = function(){
+            let paragrafo = document.querySelector("#para").style;
+            if(paragrafo.display == "none")
+                paragrafo.display = "block";
+            else
+                paragrafo.display = "none";
+        }
+        document.querySelector("#botao2").onclick = function(){
+            let num1 = document.querySelector("#num1").value;
+            let num2 = document.querySelector("#num2").value;
+            document.querySelector("#para").innerHTML = parseInt(num1) + parseInt(num2);
+        }
+    </script>
+</body>
+</html>
