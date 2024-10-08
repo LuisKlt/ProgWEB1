@@ -3,7 +3,7 @@
 	<head>
 	    <meta charset="utf-8">
 		<style type="text/css">
-			body{margin:0; background-color:#D90000; color:#FFFFFF; font-size:16px;}
+			body{margin:0; background-color:#410000; color:#FFFFFF; font-size:16px;}
 			#fonte{text-align:right;}
 			#cor{text-align:right;}
 			#tudo{margin:0 auto; width:800px;}
@@ -24,7 +24,7 @@
 				<span>Inicio<span><br>
 				<span id="noticias">Noticias</span><br>
 				<div id="not">
-				Hoje<br>
+				Hoje<br	>
 				Esse mês<br>
 				Procurar<br>
 				</div>
@@ -42,5 +42,47 @@
 				<a href="#" style="color:white;" id="link">Veja mais</a>
 			</div>
 		</div>
+		<script>
+			document.querySelector("#not").style.display = "none";
+			document.querySelector("#noticias").onclick = function(){
+				let not = document.querySelector("#not").style;
+				if(not.display == "none")
+					not.display = "block";
+				else
+					not.display = "none";
+        	}
+			
+			document.querySelector("#par").style.display = "none";
+			document.querySelector("#parceiros").onclick = function(){
+				let par = document.querySelector("#par").style;
+				if(par.display == "none")
+					par.display = "block";
+				else
+					par.display = "none";
+        	}
+
+			document.querySelector("#aumentarFonte").onclick = function(){
+				document.querySelector("#tudo").style.fontSize = "18px";
+        	}
+			document.querySelector("#normalFonte").onclick = function(){
+				document.querySelector("#tudo").style.fontSize = "16px";
+        	}
+			document.querySelector("#diminuirFonte").onclick = function(){
+				document.querySelector("#tudo").style.fontSize = "14px";
+        	}
+
+			document.querySelector("#altoContrasteOn").onclick = function(){
+				document.querySelector("body").style.backgroundColor = "black";
+				document.querySelector("body").style.color = "yellow";
+        	}
+			document.querySelector("#altoContrasteOff").onclick = function(){
+				document.querySelector("body").style.backgroundColor = "darkred";
+				document.querySelector("body").style.color = "white";
+        	}
+
+			document.querySelector("#link").addEventListener("mouseover", function(){
+				document.querySelector("#link")
+			})
+		</script>
 	</body>
 </html>
